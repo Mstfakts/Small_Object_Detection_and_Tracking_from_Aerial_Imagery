@@ -1,6 +1,10 @@
 # Copyright (c) Facebook, Inc. and its affiliates.
 from .config import CfgNode as CN
 
+# NOTE: given the new config system
+# (https://detectron2.readthedocs.io/en/latest/tutorials/lazyconfigs.html),
+# we will stop adding new functionalities to default CfgNode.
+
 # -----------------------------------------------------------------------------
 # Convention about Training / Test specific parameters
 # -----------------------------------------------------------------------------
@@ -504,7 +508,8 @@ _C.MODEL.RESNETS.DEFORM_NUM_GROUPS = 1
 # ---------------------------------------------------------------------------- #
 _C.SOLVER = CN()
 
-# See detectron2/solver/build.py for LR scheduler options
+# Options: WarmupMultiStepLR, WarmupCosineLR.
+# See detectron2/solver/build.py for definition.
 _C.SOLVER.LR_SCHEDULER_NAME = "WarmupMultiStepLR"
 
 _C.SOLVER.MAX_ITER = 40000
