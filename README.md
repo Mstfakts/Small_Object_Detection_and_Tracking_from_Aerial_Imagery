@@ -1,3 +1,5 @@
+This is an implementation of ["M. Aktaş and H. F. Ateş, "Small Object Detection and Tracking from Aerial Imagery,"](https://ieeexplore.ieee.org/document/9558923) 2021 6th International Conference on Computer Science and Engineering (UBMK), 2021, pp. 688-693, doi: 10.1109/UBMK52708.2021.9558923"
+
 <div align="center">
   <img src=".github/Compare.jpg"/>
 </div>
